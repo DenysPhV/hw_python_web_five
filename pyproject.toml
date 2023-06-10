@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hw-python-web-five"
+version = "0.1.0"
+description = ""
+authors = ["Denys Filichkin <denys.philichkin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw_python_web_five"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.4"
+websockets = "^11.0.3"
+aiofile = "^3.8.7"
+aiopath = "^0.6.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
