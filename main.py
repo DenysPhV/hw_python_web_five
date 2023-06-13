@@ -41,7 +41,7 @@ def valid_param(args) -> list:
 
 def prepare_url(days: int) -> list:
     result = []
-    base_url = 'https://api.privatbank.ua/p24api/exchange_rates?date=01.12.2022'
+    base_url = 'https://api.privatbank.ua/p24api/exchange_rates?date='
 
     for i in range(date.toordinal(date.today()), date.toordinal(date.today())-days, -1):
         result.append(base_url+date.fromordinal(i-1).strftime('%d.%m.%Y'))
@@ -88,7 +88,7 @@ def get_curr_rate_list(params):
 
 
 if __name__ == '__main__':
-    params = valid_param(vars(parser.valid_param()))
+    params = valid_param(vars(parser.parse_args()))
     result = get_curr_rate_list(params)
     print(result)
 
