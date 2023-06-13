@@ -3,7 +3,7 @@
 <p>start example: py main.py -d 2 -c</p>
 
 <ul>
-<li>range days max 10th days: '-d', '--days' </li>
-<li>currency: '-c', '--curr', default EUR,USD</li>
+<li><i>range days max 10th days</i>: '-d', '--days' </li>
+<li><i>currency default EUR,USD</i>: '-c', '--curr' </li>
 </ul>
 
